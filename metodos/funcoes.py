@@ -1,5 +1,3 @@
-SALAS = ["Sala A", "Sala B", "Sala C"]
-HORARIOS = ["09:00", "10:00", "11:00", "12:00", "13:00", "14:00"]
 
 def inicializarAgenda(salas, horarios):
     agendaGeral = {}
@@ -12,5 +10,11 @@ def inicializarAgenda(salas, horarios):
     
     return agendaGeral
 
+def cabecalho(msg=""):
+    tam = 40
+    print('-' * tam)
+    print(f"{msg}".center(tam))
+    print('-' * tam)
 
-print(inicializarAgenda(SALAS, HORARIOS))
+def menu():
+    print('1. Ver Agenda Completa\n2. Fazer Reserva\n3. Cancelar Reserva\n4. Sair')
