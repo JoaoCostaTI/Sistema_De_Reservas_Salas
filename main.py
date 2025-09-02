@@ -8,14 +8,14 @@ agenda = funcoes.inicializarAgenda(SALAS, HORARIOS)
 while True:
     funcoes.cabecalho('Sistema de Reservas')
     funcoes.menu()
-    try:
+    try:1
         op = int(input('Sua opção: '))
         
         if op == 4:
             print('Saindo do Programa...')
             break
         elif op == 1:
-            pass
+            funcoes.verAgenda(agenda)
         elif op == 2:
             pass
         elif op == 3:

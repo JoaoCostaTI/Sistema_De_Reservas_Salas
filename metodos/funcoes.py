@@ -18,3 +18,13 @@ def cabecalho(msg=""):
 
 def menu():
     print('1. Ver Agenda Completa\n2. Fazer Reserva\n3. Cancelar Reserva\n4. Sair')
+
+def verAgenda(agenda):
+    cabecalho("Agenda Completa")
+    print("Horario |", end=" ")
+    for salas, horarios in agenda.items():
+        print(salas, end= " | ")
+    print()
+    for horario, situacao in horarios.items():
+        print(horario, situacao["09:00"])  
+    
